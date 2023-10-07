@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    margin: 0;
+    /* height: 100vh; */
+}
+.background {
+    background-image: url("halie-west-unsplash.jpg");
+    background-size: auto 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    /* width:clamp(300px, 37vw, 700px); */
+    width: 37vw;
+    color: white;
+}
+
+.logo-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+img#odin-logo {
+    height: auto;
+    width: 100px
+}
