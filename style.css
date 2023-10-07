@@ -1,9 +1,15 @@
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+  }
+
 body {
     display: flex;
     margin: 0;
     /* height: 100vh; */
 }
 .background {
+    padding-top: 250px;
     background-image: url("halie-west-unsplash.jpg");
     background-size: auto 100vh;
     background-position: center;
@@ -19,10 +25,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    
 }
 
 img#odin-logo {
     height: auto;
-    width: 100px
+    width: 100px;
+}
+
+h1.logo-text {
+    font-family: Norse;
+    font-size: 100px;
 }
