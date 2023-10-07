@@ -3,13 +3,23 @@
     src: url(Norse-Bold.otf);
   }
 
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     display: flex;
     margin: 0;
-    /* height: 100vh; */
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 .background {
-    padding-top: 250px;
+    box-sizing: border-box;
+    padding-top: 200px;
     background-image: url("halie-west-unsplash.jpg");
     background-size: auto 100vh;
     background-position: center;
@@ -26,16 +36,44 @@ body {
     justify-content: center;
     align-items: center;
     height: 150px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     
 }
 
 img#odin-logo {
     height: auto;
-    width: 100px;
+    width: 90px;
 }
 
 h1.logo-text {
     font-family: Norse;
-    font-size: 100px;
+    font-size: 90px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.inputs-row {
+    display: flex;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
 }
